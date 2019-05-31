@@ -3,12 +3,14 @@
  */
 package bit.map.transformer;
 
+import java.util.Arrays;
+
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        System.out.println(Arrays.toString(args));
+
+        Bitmap newBitmap = new Bitmap(args[0], args[1]);
     }
 }

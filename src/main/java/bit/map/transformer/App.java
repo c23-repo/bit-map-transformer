@@ -12,5 +12,7 @@ public class App {
         System.out.println(Arrays.toString(args));
 
         Bitmap newBitmap = new Bitmap(args[0], args[1]);
+
+        newBitmap.writeNewImg();
     }
 }

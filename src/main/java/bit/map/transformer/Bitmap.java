@@ -34,6 +34,17 @@ public class Bitmap {
 
     // method to write changes to a new file
 
+    //take img and write to a new file.
+    public void writeNewImg(){
+        try{
+            ImageIO.write(this.image, "bmp", new File("src/main/resources/" + outputName));
+
+        } catch(IOException e){
+            System.out.println(e);
+        }
+
+    }
+
     // four transform methods
         // flipHorizontally
 }
